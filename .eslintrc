@@ -5,7 +5,20 @@
 // Copy this file, and add rule overrides as needed.
 {
   "extends": "airbnb/base",
-
+  "env": {
+    "mocha": true
+  },
+  "globals": {
+    "document": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react"
+  ],
   /**
    * Overrides to the airbnb rules
    */
